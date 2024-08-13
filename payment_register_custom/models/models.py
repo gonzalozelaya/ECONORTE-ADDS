@@ -2,7 +2,7 @@
 
 from odoo import models, fields, api
 
-class PaymentPopUp(models.Model):
+class PaymentPopUp(models.TransientModel):
     _inherit = 'account.payment.register'
     journal_id = fields.Many2one(
         comodel_name='account.journal',
