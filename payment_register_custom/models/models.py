@@ -8,9 +8,7 @@ class PaymentPopUp(models.Model):
         comodel_name='account.journal',
         compute='', store=True, readonly=False, precompute=True,
         check_company=True,
-        domain="[('type', 'in', ['cash','bank']),('company_id', '=', company_id)]")
-    nuevo_campo = fields.Char(string="Skeree",default='Hola')
-    
+        domain="[('type', 'in', ['cash','bank']),('company_id', '=', company_id)]")    
 # class my_module(models.Model):
 #     _name = 'my_module.my_module'
 
